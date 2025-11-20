@@ -166,6 +166,7 @@ Planned features:
 
 Removed features:
 - DHT driver
+
 Features that won't work on WLR089U0, but can be re-enabled, see mpconfigmcu.h:
 - AsyncIO
 - Onewire
