@@ -46,39 +46,49 @@ Port of MicroPython to Microchip WLR089U0(SAML21/ATSAMR34/35 MCUs)
 -------------------------------------------------------
 Connections of HW
 -------------------------------------------------------
-A simplified diagram can be found in boards/WLR089U0
-WLR089U0_Connections.png
 
-Flash memory (Winbond W25Q16JV-IQ)
-FLASH_MOSI,PB22
-FLASH_MISO,PA22
-FLASH_SCK,PB23
-FLASH_CS,PA23
+A simplified connection diagram can be found here:
+`boards/WLR089U0/WLR089U0_Connections.png`
 
-USB breakout board:
-USB_DM,PA24
-USB_DP,PA25
+### 1. Flash Memory (Winbond W25Q16JV-IQ)
+| Signal Name | Pin |
+| :--- | :--- |
+| **FLASH_MOSI** | PB22 |
+| **FLASH_MISO** | PA22 |
+| **FLASH_SCK** | PB23 |
+| **FLASH_CS** | PA23 |
 
-Push Button:
-RST Pin
+### 2. USB Interface
+| Signal Name | Pin |
+| :--- | :--- |
+| **USB_DM** | PA24 |
+| **USB_DP** | PA25 |
 
-LoRa SPI Interface (SPI-COM4):
-LORA_MOSI  PB30
-LORA_CS    PB31
-LORA_SCK   PC18
-LORA_MISO  PC19
+### 3. User Interface
+* **Push Button (Reset):** RST Pin
 
-LoRa DIO Pins:
-LORA_DIO0  PB16
-LORA_DIO1  PA11
-LORA_DIO2  PA12
-LORA_DIO3  PB17
-LORA_DIO4  PA10
-LORA_DIO5  PB00
+### 4. LoRa Module (SX127x)
 
-Other Pins:
-LORA_nRST  PB15
-LORA_PWR   PA09
+**SPI Interface (SPI-COM4):**
+| Signal Name | Pin |
+| :--- | :--- |
+| **LORA_MOSI** | PB30 |
+| **LORA_CS** | PB31 |
+| **LORA_SCK** | PC18 |
+| **LORA_MISO** | PC19 |
+
+**DIO & Control Pins:**
+| Signal Name | Pin | Description |
+| :--- | :--- | :--- |
+| **LORA_DIO0** | PB16 | Packet Received / Tx Done |
+| **LORA_DIO1** | PA11 | Rx Timeout |
+| **LORA_DIO2** | PA12 | Freq. Hop |
+| **LORA_DIO3** | PB17 | - |
+| **LORA_DIO4** | PA10 | - |
+| **LORA_DIO5** | PB00 | - |
+| **LORA_nRST** | PB15 | Reset |
+| **LORA_PWR** | PA09 | RF Switch Power |
+
 -------------------------------------------------------
 Build Instructions
 ------------------
