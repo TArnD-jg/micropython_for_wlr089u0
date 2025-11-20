@@ -1,0 +1,53 @@
+{
+  "makefile.makeDirectory": "${workspaceFolder}",
+  "makefile.buildDirectory": "${workspaceFolder}/build",
+  "makefile.makePath": "/usr/bin/make",
+  "makefile.configurations": [
+    {
+      "name": "default",
+      "makeArgs": ["-j4"]
+    }
+  ],
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}",
+    "${workspaceFolder}/../../py",
+    "${workspaceFolder}/../../lib",
+    "${workspaceFolder}/../../extmod",
+    "${workspaceFolder}/../../drivers",
+    "${workspaceFolder}/../../"
+  ],
+  "C_Cpp.default.defines": [
+    "MICROPY_PY_BUILTINS_FLOAT=1",
+    "MICROPY_EMIT_THUMB=1"
+  ],
+  "editor.tabSize": 4,
+  "files.associations": {
+    "mphal.h": "c",
+    "samd_soc.h": "c",
+    "softtimer.h": "c",
+    "compare": "c",
+    "cstdint": "c",
+    "aes.h": "c",
+    "crypto.h": "c",
+    "mpconfig.h": "c",
+    "string.h": "c",
+    "hal_aes_sync.h": "c",
+    "utils_assert.h": "c",
+    "hpl_aes_sync.h": "c",
+    "sam.h": "c",
+    "runtime.h": "c",
+    "assert.h": "c",
+    "array": "c",
+    "istream": "c",
+    "ostream": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c",
+    "string_view": "c",
+    "unordered_map": "c",
+    "modmachine.h": "c",
+    "hpl_aes_config.h": "c"
+  },
+  "makefile.configureOnOpen": true
+}

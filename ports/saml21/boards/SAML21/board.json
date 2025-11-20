@@ -1,0 +1,17 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [
+        "USB"
+    ],
+    "images": [
+        ""
+    ],
+    "mcu": "SAML21",
+    "product": "SAML21",
+    "thumbnail": "",
+    "url": "https://www.microchip.com/en-us/product/atsaml21j18b",
+    "vendor": "Microchip"
+}

@@ -1,0 +1,18 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [
+        "LoRa transceiver",
+        "USB"
+    ],
+    "images": [
+        ""
+    ],
+    "mcu": "saml21",
+    "product": "WLR089U0",
+    "thumbnail": "",
+    "url": "https://www.microchip.com/en-us/product/wlr089u0",
+    "vendor": "Microchip"
+}
